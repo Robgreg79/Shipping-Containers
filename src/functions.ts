@@ -22,5 +22,5 @@ export function isSafeToAddContainer(
   container: ShippingContainer
 ): boolean {
   let total = ship.getTotalWeight() + container.getGrossWeight();
- return total <= ship.maxWeight ?  true : false;
+  return total <= ship.maxWeight ? true : false;
 }
